@@ -1,0 +1,69 @@
+/* Web App Responsive CSS Styling File */
+@media (max-width: 1110px) {
+    .test {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 890px) {
+    .test {
+        transform: scale(0.7);
+    }
+    .menu-content {
+        width: 600px;
+    }
+}
+@media (max-width: 780px) {
+    .test {
+        transform: scale(0.6);
+    }
+}
+@media (max-width: 670px) {
+    .test {
+        transform: scale(0.5);
+    }
+}
+@media (max-width: 600px) {
+    .menu-content {
+        transform: scale(0.9);
+    }
+}
+@media (max-width: 560px) {
+    .test {
+        transform: scale(0.4);
+    }
+}
+@media (max-width: 540px) {
+    .menu-content {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 480px) {
+    .menu-content {
+        transform: scale(0.7);
+    }
+}
+@media (max-width: 450px) {
+    .test {
+        transform: scale(0.29);
+    }
+    header {
+        padding: 0;
+    }
+    .web-logo {
+        transform: scale(0.8);
+        margin-left: -20px;
+    }
+    .menu-btn {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 420px) {
+    .menu-content {
+        transform: scale(0.6);
+    }
+}
+@media (max-width: 360px) {
+    .menu-content {
+        transform: scale(0.53);
+    }
+}
