@@ -6,6 +6,6 @@ SwordyType is a customizable typing speed test web application. You can test you
 
 ## Contact
 
-Find me on discord as [Swordax#5756](https://discord.com/users/465453058667839499/)
-Email me through [swordax.sy](mailto:swordax.sy@gmail.com)
-Find me on social media as @swordax.sy
+Find me on discord as [swordax](https://discord.com/users/465453058667839499/)
+Email me through [mo.bakour@outlook.com](mailto:mo.bakour@outlook.com)
+Find me on [linkedin](https://www.linkedin.com/in/mobakour/)
