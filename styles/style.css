@@ -313,7 +313,7 @@ main .words {
 	font-size: 2.5em;
 	color: var(--text-color);
 	overflow: hidden;
-	font-family: "Nova Mono";
+	font-family: "Roboto Mono";
 	scroll-behavior: smooth;
 	transition: all 0.3s ease;
 }
