@@ -1,632 +1,632 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<!-- Main Head Codes -->
-		<title>SwordyType</title>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="author" content="MoBakour" />
-		<meta name="description" content="SwordyType typing speed test" />
-		<meta
-			name="keywords"
-			content="Typing, Speed, Test, Swordax, SwordyType, SwordaxSy, MoBakour"
-		/>
-		<link rel="icon" href="./assets/images/website-logo.png" />
+    <head>
+        <!-- Main Head Codes -->
+        <title>SwordyType</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="MoBakour" />
+        <meta name="description" content="SwordyType typing speed test" />
+        <meta
+            name="keywords"
+            content="Typing, Speed, Test, Swordax, SwordyType, SwordaxSy, MoBakour"
+        />
+        <link rel="icon" href="./assets/images/website-logo.png" />
 
-		<!-- CSS Files Connections -->
-		<link rel="stylesheet" href="./styles/style.css" />
-		<link rel="stylesheet" href="./styles/responsive.css" />
+        <!-- CSS Files Connections -->
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/responsive.css" />
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap"
-			rel="stylesheet"
-		/>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
 
-		<!-- Font Awesome CDN -->
-		<link
-			rel="stylesheet"
-			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-			crossorigin="anonymous"
-		/>
+        <!-- Font Awesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
 
-		<!-- JS Files Connections -->
-		<script src="./info.js" defer></script>
-		<script src="./scripts/words.js" defer></script>
-		<script src="./scripts/selectors.js" defer></script>
-		<script src="./scripts/script.js" defer></script>
+        <!-- JS Files Connections -->
+        <script src="./info.js" defer></script>
+        <script src="./scripts/words.js" defer></script>
+        <script src="./scripts/selectors.js" defer></script>
+        <script src="./scripts/script.js" defer></script>
 
-		<!-- fetch svg logo -->
-		<script>
-			fetch("/assets/images/logo.svg")
-				.then((res) => res.text())
-				.then((data) => {
-					document.querySelector(".logo").innerHTML = data;
-				});
-		</script>
-	</head>
+        <!-- fetch svg logo -->
+        <script>
+            fetch("/assets/images/logo.svg")
+                .then((res) => res.text())
+                .then((data) => {
+                    document.querySelector(".logo").innerHTML = data;
+                });
+        </script>
+    </head>
 
-	<body>
-		<!-- Header -->
-		<header>
-			<div class="web-logo">
-				<div class="logo"></div>
-				<h1>SwordyType</h1>
-			</div>
-			<div class="menu-btn">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</header>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="web-logo">
+                <div class="logo"></div>
+                <h1>SwordyType</h1>
+            </div>
+            <div class="menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
 
-		<!-- Main Body -->
-		<main>
-			<!-- Test Div -->
-			<div class="test">
-				<div class="timer">
-					<p class="time"><!-- Test time will be inserted here --></p>
-				</div>
-				<div class="words">
-					<!-- Words will dynamically be added here -->
-				</div>
-				<!-- Result Div -->
-				<div class="result">
-					<div class="wpm-div" title="Words Per Minute">
-						<aside>
-							<p class="results-format wpm">
-								<!-- WPM speed will be inserted here -->
-							</p>
-						</aside>
-						<p class="static-format">WPM</p>
-					</div>
-					<div class="acc-div" title="Accuracy">
-						<aside>
-							<p class="results-format acc">
-								<!-- Accuracy will be inserted here -->
-							</p>
-						</aside>
-						<p class="static-format">ACC</p>
-					</div>
-					<div class="type-div" title="Test Type">
-						<aside>
-							<p class="results-format test-duration">
-								<!-- Test duration will be inserted here -->
-							</p>
-							<p class="results-format test-mode">
-								<!-- Test mode will be inserted here -->
-							</p>
-							<p class="results-format test-type">
-								<!-- Test type will be inserted here -->
-							</p>
-						</aside>
-						<p class="static-format">Test Type</p>
-					</div>
-					<div class="details-div" title="Characters Details">
-						<aside>
-							<p class="results-format total-chars">
-								<!-- Total characters will be inserted here -->
-							</p>
-							<p class="results-format correct-chars">
-								<!-- Correct characters will be inserted here -->
-							</p>
-							<p class="results-format wrong-chars">
-								<!-- Wrong characters will be inserted here -->
-							</p>
-						</aside>
-						<p class="static-format">Characters</p>
-					</div>
-				</div>
-				<!-- Refresh Bar Div -->
-				<div class="refresh-div">
-					<div class="refresh-line"></div>
-					<i
-						class="fas fa-redo-alt refresh-btn"
-						onclick="refreshTest();"
-						title="Redo [Enter]"
-					></i>
-					<div class="refresh-line"></div>
-				</div>
-			</div>
-		</main>
+        <!-- Main Body -->
+        <main>
+            <!-- Test Div -->
+            <div class="test">
+                <div class="timer">
+                    <p class="time"><!-- Test time will be inserted here --></p>
+                </div>
+                <div class="words">
+                    <!-- Words will dynamically be added here -->
+                </div>
+                <!-- Result Div -->
+                <div class="result">
+                    <div class="wpm-div" title="Words Per Minute">
+                        <aside>
+                            <p class="results-format wpm">
+                                <!-- WPM speed will be inserted here -->
+                            </p>
+                        </aside>
+                        <p class="static-format">WPM</p>
+                    </div>
+                    <div class="acc-div" title="Accuracy">
+                        <aside>
+                            <p class="results-format acc">
+                                <!-- Accuracy will be inserted here -->
+                            </p>
+                        </aside>
+                        <p class="static-format">ACC</p>
+                    </div>
+                    <div class="type-div" title="Test Type">
+                        <aside>
+                            <p class="results-format test-duration">
+                                <!-- Test duration will be inserted here -->
+                            </p>
+                            <p class="results-format test-mode">
+                                <!-- Test mode will be inserted here -->
+                            </p>
+                            <p class="results-format test-type">
+                                <!-- Test type will be inserted here -->
+                            </p>
+                        </aside>
+                        <p class="static-format">Test Type</p>
+                    </div>
+                    <div class="details-div" title="Characters Details">
+                        <aside>
+                            <p class="results-format total-chars">
+                                <!-- Total characters will be inserted here -->
+                            </p>
+                            <p class="results-format correct-chars">
+                                <!-- Correct characters will be inserted here -->
+                            </p>
+                            <p class="results-format wrong-chars">
+                                <!-- Wrong characters will be inserted here -->
+                            </p>
+                        </aside>
+                        <p class="static-format">Characters</p>
+                    </div>
+                </div>
+                <!-- Refresh Bar Div -->
+                <div class="refresh-div">
+                    <div class="refresh-line"></div>
+                    <i
+                        class="fas fa-redo-alt refresh-btn"
+                        onclick="refreshTest();"
+                        title="Redo [Enter]"
+                    ></i>
+                    <div class="refresh-line"></div>
+                </div>
+            </div>
+        </main>
 
-		<!-- Footer -->
-		<footer>
-			<p class="copyrights">
-				Made By
-				<span class="link" onclick="showDiscord()">MoBakour</span>
-			</p>
-		</footer>
+        <!-- Footer -->
+        <footer>
+            <p class="copyrights">
+                Made By
+                <span class="link" onclick="showDiscord()">MoBakour</span>
+            </p>
+        </footer>
 
-		<!-- Menu -->
-		<div class="menu">
-			<div class="menu-content">
-				<section class="test-mode">
-					<h1>Test Mode</h1>
-					<aside>
-						<div>
-							<div class="full-width test-modes buttons-format">
-								<div
-									onclick="changeMode(0)"
-									class="current-selected"
-								>
-									Cold
-								</div>
-								<div onclick="changeMode(1)">Hot</div>
-								<div onclick="changeMode(2)">Fire</div>
-							</div>
-							<article class="test-mode-notes">
-								<span
-									>Cold mode allows you to always use
-									backspace</span
-								>
-								<span>Hot mode disables the backspace</span>
-								<span
-									>Fire mode ends the test at the first
-									mistake</span
-								>
-							</article>
-						</div>
-					</aside>
-				</section>
-				<section class="test-type">
-					<h1>Test Type</h1>
-					<aside>
-						<div class="test-durations">
-							<p>Test Time</p>
-							<div class="durations buttons-format">
-								<div onclick="changeDuration(15)">15 sec</div>
-								<div onclick="changeDuration(30)">30 sec</div>
-								<div
-									onclick="changeDuration(60)"
-									class="current-selected"
-								>
-									60 sec
-								</div>
-								<div onclick="changeDuration(120)">120 sec</div>
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="test-language">
-							<p>Language</p>
-							<div class="dropdown-format test-language">
-								<div
-									class="opener"
-									onclick="dropdownAction('languages')"
-								>
-									English Medium
-								</div>
-								<div class="options languages">
-									<div
-										onclick="changeLanguage('engEasy', this)"
-									>
-										English Easy
-									</div>
-									<div
-										onclick="changeLanguage('engMedium', this)"
-										class="current-option"
-									>
-										English Medium
-									</div>
-									<div
-										onclick="changeLanguage('engHard', this)"
-									>
-										English Hard
-									</div>
-									<div
-										onclick="changeLanguage('arabic', this)"
-									>
-										Arabic
-									</div>
-									<div
-										onclick="changeLanguage('russian', this)"
-									>
-										Russian
-									</div>
-								</div>
-							</div>
-						</div>
-					</aside>
-				</section>
-				<section class="appearance">
-					<h1>Appearance</h1>
-					<aside>
-						<div class="theme">
-							<p>Theme</p>
-							<div class="themes buttons-format">
-								<!-- Themes will be inserted here -->
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="time-display">
-							<p>Timer</p>
-							<div class="timer-status buttons-format">
-								<div
-									onclick="timerDisplay(true, this)"
-									class="current-selected"
-								>
-									Show
-								</div>
-								<div onclick="timerDisplay(false, this)">
-									Hide
-								</div>
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="font-size">
-							<p>Font Size</p>
-							<div class="sizes buttons-format">
-								<div onclick="changeFontSize(1, this)">1</div>
-								<div onclick="changeFontSize(1.5, this)">
-									1.5
-								</div>
-								<div onclick="changeFontSize(2, this)">2</div>
-								<div
-									onclick="changeFontSize(2.5, this)"
-									class="current-selected"
-								>
-									2.5
-								</div>
-								<div onclick="changeFontSize(3, this)">3</div>
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="font-family">
-							<p>Font Family</p>
-							<div class="families buttons-format">
-								<div
-									onclick="changeFontFamily('Roboto Mono', this)"
-									style="font-family: 'Roboto Mono'"
-									class="current-selected"
-								>
-									Roboto Mono
-								</div>
-								<div
-									onclick="changeFontFamily('Nova Mono', this)"
-									style="font-family: 'Nova Mono'"
-								>
-									Nova Mono
-								</div>
-								<div
-									onclick="changeFontFamily('Xanh Mono', this)"
-									style="font-family: 'Xanh Mono'"
-								>
-									Xanh Mono
-								</div>
-								<div
-									onclick="changeFontFamily('DM Mono', this)"
-									style="font-family: 'DM Mono'"
-								>
-									DM Mono
-								</div>
-							</div>
-						</div>
-					</aside>
-				</section>
-				<section class="behavior">
-					<h1>Test Behavior</h1>
-					<aside>
-						<div class="behavior switch-format">
-							<p>Smooth Auto-Scrolling</p>
-							<div
-								onclick="smoothScroll_switch(this)"
-								class="switch-btn switch-opened"
-							>
-								<div>
-									<div class="status"></div>
-								</div>
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="behavior switch-format">
-							<p>Show Mistakes</p>
-							<div
-								onclick="showMistakes_switch(this)"
-								class="switch-btn switch-opened"
-							>
-								<div>
-									<div class="status"></div>
-								</div>
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="behavior switch-format">
-							<p>Enable Sound</p>
-							<div
-								onclick="enableSound_switch(this)"
-								class="switch-btn switch-opened"
-							>
-								<div>
-									<div class="status"></div>
-								</div>
-							</div>
-						</div>
-					</aside>
-					<aside>
-						<div class="behavior switch-format">
-							<p>Backspace to previous word</p>
-							<div
-								onclick="backWord_switch(this)"
-								class="switch-btn switch-opened"
-							>
-								<div>
-									<div class="status"></div>
-								</div>
-							</div>
-						</div>
-					</aside>
-				</section>
-			</div>
+        <!-- Menu -->
+        <div class="menu">
+            <div class="menu-content">
+                <section class="test-mode">
+                    <h1>Test Mode</h1>
+                    <aside>
+                        <div>
+                            <div class="full-width test-modes buttons-format">
+                                <div
+                                    onclick="changeMode(0)"
+                                    class="current-selected"
+                                >
+                                    Cold
+                                </div>
+                                <div onclick="changeMode(1)">Hot</div>
+                                <div onclick="changeMode(2)">Fire</div>
+                            </div>
+                            <article class="test-mode-notes">
+                                <span
+                                    >Cold mode allows you to always use
+                                    backspace</span
+                                >
+                                <span>Hot mode disables the backspace</span>
+                                <span
+                                    >Fire mode ends the test at the first
+                                    mistake</span
+                                >
+                            </article>
+                        </div>
+                    </aside>
+                </section>
+                <section class="test-type">
+                    <h1>Test Type</h1>
+                    <aside>
+                        <div class="test-durations">
+                            <p>Test Time</p>
+                            <div class="durations buttons-format">
+                                <div onclick="changeDuration(15)">15 sec</div>
+                                <div onclick="changeDuration(30)">30 sec</div>
+                                <div
+                                    onclick="changeDuration(60)"
+                                    class="current-selected"
+                                >
+                                    60 sec
+                                </div>
+                                <div onclick="changeDuration(120)">120 sec</div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="test-language">
+                            <p>Language</p>
+                            <div class="dropdown-format test-language">
+                                <div
+                                    class="opener"
+                                    onclick="dropdownAction('languages')"
+                                >
+                                    English Medium
+                                </div>
+                                <div class="options languages">
+                                    <div
+                                        onclick="changeLanguage('engEasy', this)"
+                                    >
+                                        English Easy
+                                    </div>
+                                    <div
+                                        onclick="changeLanguage('engMedium', this)"
+                                        class="current-option"
+                                    >
+                                        English Medium
+                                    </div>
+                                    <div
+                                        onclick="changeLanguage('engHard', this)"
+                                    >
+                                        English Hard
+                                    </div>
+                                    <div
+                                        onclick="changeLanguage('arabic', this)"
+                                    >
+                                        Arabic
+                                    </div>
+                                    <div
+                                        onclick="changeLanguage('russian', this)"
+                                    >
+                                        Russian
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+                <section class="appearance">
+                    <h1>Appearance</h1>
+                    <aside>
+                        <div class="theme">
+                            <p>Theme</p>
+                            <div class="themes buttons-format">
+                                <!-- Themes will be inserted here -->
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="time-display">
+                            <p>Timer</p>
+                            <div class="timer-status buttons-format">
+                                <div
+                                    onclick="timerDisplay(true, this)"
+                                    class="current-selected"
+                                >
+                                    Show
+                                </div>
+                                <div onclick="timerDisplay(false, this)">
+                                    Hide
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="font-size">
+                            <p>Font Size</p>
+                            <div class="sizes buttons-format">
+                                <div onclick="changeFontSize(1, this)">1</div>
+                                <div onclick="changeFontSize(1.5, this)">
+                                    1.5
+                                </div>
+                                <div onclick="changeFontSize(2, this)">2</div>
+                                <div
+                                    onclick="changeFontSize(2.5, this)"
+                                    class="current-selected"
+                                >
+                                    2.5
+                                </div>
+                                <div onclick="changeFontSize(3, this)">3</div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="font-family">
+                            <p>Font Family</p>
+                            <div class="families buttons-format">
+                                <div
+                                    onclick="changeFontFamily('Roboto Mono', this)"
+                                    style="font-family: 'Roboto Mono'"
+                                    class="current-selected"
+                                >
+                                    Roboto Mono
+                                </div>
+                                <div
+                                    onclick="changeFontFamily('Nova Mono', this)"
+                                    style="font-family: 'Nova Mono'"
+                                >
+                                    Nova Mono
+                                </div>
+                                <div
+                                    onclick="changeFontFamily('Xanh Mono', this)"
+                                    style="font-family: 'Xanh Mono'"
+                                >
+                                    Xanh Mono
+                                </div>
+                                <div
+                                    onclick="changeFontFamily('DM Mono', this)"
+                                    style="font-family: 'DM Mono'"
+                                >
+                                    DM Mono
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+                <section class="behavior">
+                    <h1>Test Behavior</h1>
+                    <aside>
+                        <div class="behavior switch-format">
+                            <p>Smooth Auto-Scrolling</p>
+                            <div
+                                onclick="smoothScroll_switch(this)"
+                                class="switch-btn switch-opened"
+                            >
+                                <div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="behavior switch-format">
+                            <p>Show Mistakes</p>
+                            <div
+                                onclick="showMistakes_switch(this)"
+                                class="switch-btn switch-opened"
+                            >
+                                <div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="behavior switch-format">
+                            <p>Enable Sound</p>
+                            <div
+                                onclick="enableSound_switch(this)"
+                                class="switch-btn switch-opened"
+                            >
+                                <div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="behavior switch-format">
+                            <p>Backspace to previous word</p>
+                            <div
+                                onclick="backWord_switch(this)"
+                                class="switch-btn switch-opened"
+                            >
+                                <div>
+                                    <div class="status"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+            </div>
 
-			<div class="custom-theme">
-				<div class="custom-theme-box">
-					<i
-						class="fas fa-times custom-theme-close"
-						onclick="customTheme(false)"
-					></i>
-					<h2>Customize Theme</h2>
-					<div>
-						<p>Background Color</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="app_bg_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="app_bg_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="app_bg_b"
-						/>
-					</div>
-					<div>
-						<p>Main Color</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="logo_clr_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="logo_clr_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="logo_clr_b"
-						/>
-					</div>
-					<div>
-						<p>Text Color</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="text_clr_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="text_clr_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="text_clr_b"
-						/>
-					</div>
-					<div>
-						<p>Current Character</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="current_clr_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="current_clr_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="current_clr_b"
-						/>
-					</div>
-					<div>
-						<p>Correct Character</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="correct_clr_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="correct_clr_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="correct_clr_b"
-						/>
-					</div>
-					<div>
-						<p>Wrong Character</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="wrong_clr_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="wrong_clr_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="wrong_clr_b"
-						/>
-					</div>
-					<div>
-						<p>Wrong Background</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="wrong_bg_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="wrong_bg_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="wrong_bg_b"
-						/>
-					</div>
-					<div>
-						<p>Menu Background</p>
-						<input
-							type="number"
-							placeholder="R"
-							min="0"
-							max="255"
-							class="menu_bg_r"
-						/>
-						<input
-							type="number"
-							placeholder="G"
-							min="0"
-							max="255"
-							class="menu_bg_g"
-						/>
-						<input
-							type="number"
-							placeholder="B"
-							min="0"
-							max="255"
-							class="menu_bg_b"
-						/>
-					</div>
-					<div class="custom-theme-btns">
-						<input
-							type="button"
-							value="Set Theme"
-							onclick="setCustomTheme()"
-						/>
-						<!-- <input type="button" value="Reset Colors"> -->
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="custom-theme">
+                <div class="custom-theme-box">
+                    <i
+                        class="fas fa-times custom-theme-close"
+                        onclick="customTheme(false)"
+                    ></i>
+                    <h2>Customize Theme</h2>
+                    <div>
+                        <p>Background Color</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="app_bg_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="app_bg_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="app_bg_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Main Color</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="logo_clr_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="logo_clr_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="logo_clr_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Text Color</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="text_clr_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="text_clr_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="text_clr_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Current Character</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="current_clr_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="current_clr_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="current_clr_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Correct Character</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="correct_clr_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="correct_clr_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="correct_clr_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Wrong Character</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="wrong_clr_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="wrong_clr_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="wrong_clr_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Wrong Background</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="wrong_bg_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="wrong_bg_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="wrong_bg_b"
+                        />
+                    </div>
+                    <div>
+                        <p>Menu Background</p>
+                        <input
+                            type="number"
+                            placeholder="R"
+                            min="0"
+                            max="255"
+                            class="menu_bg_r"
+                        />
+                        <input
+                            type="number"
+                            placeholder="G"
+                            min="0"
+                            max="255"
+                            class="menu_bg_g"
+                        />
+                        <input
+                            type="number"
+                            placeholder="B"
+                            min="0"
+                            max="255"
+                            class="menu_bg_b"
+                        />
+                    </div>
+                    <div class="custom-theme-btns">
+                        <input
+                            type="button"
+                            value="Set Theme"
+                            onclick="setCustomTheme()"
+                        />
+                        <!-- <input type="button" value="Reset Colors"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<!-- Fake Input for Mobile Users -->
-		<input type="text" autocomplete="off" class="fake-input" />
+        <!-- Fake Input for Mobile Users -->
+        <input type="text" autocomplete="off" class="fake-input" />
 
-		<!-- Discord Div -->
-		<div class="discord-div">
-			<div class="discord-div-content">
-				<p>My discord username:</p>
-				<p class="discord-id">
-					<span class="my-discord">swordax</span
-					><span class="hover-note">Click to copy</span>
-				</p>
-			</div>
-		</div>
+        <!-- Discord Div -->
+        <div class="discord-div">
+            <div class="discord-div-content">
+                <p>My discord username:</p>
+                <p class="discord-id">
+                    <span class="my-discord">swordax</span
+                    ><span class="hover-note">Click to copy</span>
+                </p>
+            </div>
+        </div>
 
-		<!-- HTML Style Tags for Dynamic CSS -->
-		<style class="theme-root">
-			/* Theme will be selected from JS and inserted here */
-		</style>
+        <!-- HTML Style Tags for Dynamic CSS -->
+        <style class="theme-root">
+            /* Theme will be selected from JS and inserted here */
+        </style>
 
-		<style class="test-size-css">
-			/* Defined in JS */
-		</style>
+        <style class="test-size-css">
+            /* Defined in JS */
+        </style>
 
-		<style class="mistakes-display">
-			.wrong {
-				color: var(--wrong);
-				background-color: var(--wrong-bg);
-			}
-		</style>
-	</body>
+        <style class="mistakes-display">
+            .wrong {
+                color: var(--wrong);
+                background-color: var(--wrong-bg);
+            }
+        </style>
+    </body>
 </html>
